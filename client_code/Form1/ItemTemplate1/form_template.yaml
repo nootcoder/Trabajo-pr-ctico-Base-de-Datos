@@ -1,0 +1,55 @@
+components:
+- layout_properties: {grid_position: 'GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,WVLDPK EFCLFU,FBLCIZ IHTWJT,VBAAAG'}
+  name: label_1
+  properties: {text: 'Nombre:'}
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''nombre_tb'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,WVLDPK EFCLFU,FBLCIZ IHTWJT,LVYBFR'}
+  name: label_nombre_rp
+  properties: {}
+  type: Label
+- layout_properties: {grid_position: 'GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,WVLDPK EFCLFU,RLCVIH'}
+  name: label_3
+  properties: {text: 'Materia:'}
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''codigo_materia_tb'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,WVLDPK EFCLFU,XKZGEK'}
+  name: label_materia_rp
+  properties: {}
+  type: Label
+- layout_properties: {grid_position: 'GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,BKQXEP'}
+  name: label_4
+  properties: {text: 'Nota:'}
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''nota_tb'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,YOFHTQ'}
+  name: label_nota_rp
+  properties: {}
+  type: Label
+- layout_properties: {grid_position: 'GNOLSJ,GDFDKY JHVBKB,JBTOHR'}
+  name: edit_button_relacional
+  properties: {icon: 'fa:pencil-square-o', role: primary-color, text: ''}
+  type: Button
+- event_bindings: {click: delete_button_relacional_click}
+  layout_properties: {grid_position: 'GNOLSJ,JYPIYH'}
+  name: delete_button_relacional
+  properties: {align: right, background: red, icon: 'fa:trash', role: primary-color, text: ''}
+  type: Button
+- layout_properties: {grid_position: 'GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,WVLDPK EFCLFU,FBLCIZ IHTWJT,AFXFMF'}
+  name: label_2
+  properties: {text: 'Apellido:'}
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''apellido_tb'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,WVLDPK EFCLFU,FBLCIZ IHTWJT,PKRSBU'}
+  name: label_apellido_rp
+  properties: {}
+  type: Label
+container:
+  event_bindings: {refreshing_data_bindings: form_refreshing_data_bindings}
+  properties: {col_widths: '{"WVLDPK":65,"YOFHTQ":10,"INWQTZ":55,"JBTOHR":5,"GDFDKY":55,"JYPIYH":5,"FBLCIZ":60,"XKZGEK":10,"BKQXEP":5,"RLCVIH":10,"VBAAAG":10,"LVYBFR":20,"AFXFMF":10,"PKRSBU":20}'}
+  type: ColumnPanel
+is_package: true

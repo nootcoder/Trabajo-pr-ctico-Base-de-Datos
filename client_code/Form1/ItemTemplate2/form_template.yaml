@@ -1,0 +1,35 @@
+components:
+- data_bindings:
+  - {code: 'self.item[''Nombre'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'NANAPB,OBXMEV'}
+  name: label_nombre_rp
+  properties: {text: 'self.item[''Nombre'']'}
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''Apellido'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'NANAPB,TKKOCA'}
+  name: label_apellido_rp
+  properties: {}
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''Código materia'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'NANAPB,PKWELV'}
+  name: label_materia_rp
+  properties: {}
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''Nota'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'NANAPB,CQSIID'}
+  name: label_nota_rp
+  properties: {}
+  type: Label
+- layout_properties: {grid_position: 'NANAPB,XLENLT'}
+  name: button_edit_relacional
+  properties: {icon: 'fa:pencil-square-o', role: primary-color, text: ''}
+  type: Button
+- layout_properties: {grid_position: 'NANAPB,JAJEIU'}
+  name: button_delete_relacional
+  properties: {background: red, icon: 'fa:trash', role: primary-color, text: ''}
+  type: Button
+container: {type: ColumnPanel}
+is_package: true

@@ -1,4 +1,27 @@
 allow_embedding: false
+db_schema:
+  table_2:
+    client: none
+    columns: []
+    server: full
+    title: Table 2
+  table_bdd_relacional:
+    client: full
+    columns:
+    - admin_ui: {order: 1, width: 200}
+      name: nombre_tb
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      name: apellido_tb
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      name: codigo_materia_tb
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      name: nota_tb
+      type: string
+    server: full
+    title: Table 1
 metadata: {title: tpBDD}
 name: tpBDD
 package_name: tpBDD
