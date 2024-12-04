@@ -51,7 +51,7 @@ components:
     type: Button
   - layout_properties: {grid_position: 'FEOISR,TQLHVS'}
     name: result_1
-    properties: {align: center, role: headline, visible: false}
+    properties: {align: left, role: headline, visible: false}
     type: Label
   layout_properties: {slot: default}
   name: column_panel_1
