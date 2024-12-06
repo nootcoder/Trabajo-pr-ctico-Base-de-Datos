@@ -16,6 +16,7 @@ class Form1(Form1Template):
 
   def button_agregar_datos_1_click(self, **event_args):
     """This method is called when the button is clicked"""
+    #Lo mando a la bdd relacional del notebook
     result = anvil.server.call('add_to_database', 
                                self.input_nombre.text,
                               self.input_apellido.text,
@@ -24,5 +25,20 @@ class Form1(Form1Template):
     if result:
       self.result_1.visible = True
       self.result_1.text = result.capitalize()
+      #Agrego al panel de la interfaz
+      app_tables.table_bdd_relacional.add_row(codigo_materia_tb = self.input_materia.text,
+                                              apellido_tb=self.input_apellido.text,
+                                              nota_tb=self.input_nota.text,
+                                             nombre_tb=self.input_nombre.text)
+      #Actualizo el panel de la interfaz con la nueva data
+      self.repeating_panel_1.items = app_tables.table_bdd_relacional.search()
+      #Limpio las celdas de input
+      self.input_nombre.text = ''
+      self.input_apellido.text = ''
+      self.input_materia.text = ''
+      self.input_nota.text = ''
+      
+      
+      
       
       
