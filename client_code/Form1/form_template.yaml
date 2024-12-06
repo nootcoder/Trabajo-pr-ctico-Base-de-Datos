@@ -59,11 +59,19 @@ components:
     type: Label
   - layout_properties: {grid_position: 'FEOISR,RRHVHF'}
     name: label_2
-    properties: {align: center, text: Nombre}
+    properties:
+      align: center
+      spacing:
+        padding: [null, null, null, '25']
+      text: Nombre
     type: Label
   - layout_properties: {grid_position: 'FEOISR,RPBRCK'}
     name: label_3
-    properties: {align: center, text: Apellido}
+    properties:
+      align: center
+      spacing:
+        padding: [null, null, null, '25']
+      text: Apellido
     type: Label
   - layout_properties: {grid_position: 'FEOISR,NJLBNM'}
     name: label_4
@@ -71,7 +79,11 @@ components:
     type: Label
   - layout_properties: {grid_position: 'FEOISR,FSGVRM'}
     name: label_5
-    properties: {align: left, text: Nota}
+    properties:
+      align: left
+      spacing:
+        padding: [null, null, null, '30']
+      text: Nota
     type: Label
   - layout_properties: {grid_position: 'NUGBHY,HIMBKD'}
     name: repeating_panel_1
