@@ -19,5 +19,20 @@ class ItemTemplate1(ItemTemplate1Template):
 
   def delete_button_relacional_click(self, **event_args):
     """This method is called when the button is clicked"""
+    anvil.server.call('delete_from_database', 
+                      self.tb_nombre_rp.text,
+                      self.tb_apellido_rp.text,
+                      self.tb_materia_rp.text,
+                      self.tb_nota_rp.text)
     self.item.delete()
     self.remove_from_parent()
+
+  def edit_button_relacional_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    """""anvil.server.call('delete_from_database', 
+                      self.tb_nombre_rp.text,
+                      self.tb_apellido_rp.text,
+                      self.tb_materia_rp.text,
+                      self.tb_nota_rp.text)
+    self.item.delete()
+    self.remove_from_parent()"""""

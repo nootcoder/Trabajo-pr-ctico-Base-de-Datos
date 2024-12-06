@@ -18,7 +18,7 @@ class Form1(Form1Template):
     """This method is called when the button is clicked"""
     #Lo mando a la bdd relacional del notebook
     result = anvil.server.call('add_to_database', 
-                               self.input_nombre.text,
+                              self.input_nombre.text,
                               self.input_apellido.text,
                               self.input_materia.text,
                               self.input_nota.text)
