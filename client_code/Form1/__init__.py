@@ -23,13 +23,14 @@ class Form1(Form1Template):
                               self.input_materia.text,
                               self.input_nota.text)
     if result:
-      self.result_1.visible = True
-      self.result_1.text = result.capitalize()
+      #self.result_1.visible = True
+      #self.result_1.text = str(result).capitalize()
       #Agrego al panel de la interfaz
       app_tables.table_bdd_relacional.add_row(codigo_materia_tb = self.input_materia.text,
                                               apellido_tb=self.input_apellido.text,
                                               nota_tb=self.input_nota.text,
-                                             nombre_tb=self.input_nombre.text)
+                                             nombre_tb=self.input_nombre.text,
+                                             id_tb=str(result))
       #Actualizo el panel de la interfaz con la nueva data
       self.repeating_panel_1.items = app_tables.table_bdd_relacional.search()
       #Limpio las celdas de input

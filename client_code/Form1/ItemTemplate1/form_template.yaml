@@ -1,65 +1,48 @@
 components:
-- layout_properties: {grid_position: 'GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,WVLDPK EFCLFU,FBLCIZ IHTWJT,VBAAAG'}
-  name: label_1
-  properties: {text: 'Nombre:'}
+- data_bindings:
+  - {code: 'self.item[''id_tb'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'JYRPQV,RWDASP'}
+  name: id_tb_rp
+  properties: {align: center}
   type: Label
 - data_bindings:
   - {code: 'self.item[''apellido_tb'']', property: text, writeback: false}
-  layout_properties: {grid_position: 'GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,WVLDPK EFCLFU,HRRRAS'}
+  layout_properties: {grid_position: 'JYRPQV,MESZAM GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,WVLDPK EFCLFU,HRRRAS'}
   name: tb_apellido_rp
   properties:
+    align: center
     margin: [null, null, null, '-0']
   type: TextBox
-- layout_properties: {grid_position: 'GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,WVLDPK EFCLFU,RLCVIH'}
-  name: label_3
-  properties: {text: 'Materia:'}
-  type: Label
 - data_bindings:
   - {code: 'self.item[''codigo_materia_tb'']', property: text, writeback: false}
-  layout_properties: {grid_position: 'GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,CIDKKE'}
+  layout_properties: {grid_position: 'JYRPQV,MESZAM GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,CIDKKE'}
   name: tb_materia_rp
-  properties: {}
+  properties: {align: center}
   type: TextBox
-- layout_properties: {grid_position: 'GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,BKQXEP'}
-  name: label_4
-  properties: {text: 'Nota:'}
-  type: Label
 - data_bindings:
   - {code: 'self.item[''nota_tb'']', property: text, writeback: false}
-  layout_properties: {grid_position: 'GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,RKEXOC'}
+  layout_properties: {grid_position: 'JYRPQV,MESZAM GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,RKEXOC'}
   name: tb_nota_rp
-  properties: {}
+  properties: {align: center}
   type: TextBox
 - event_bindings: {click: edit_button_relacional_click}
-  layout_properties: {grid_position: 'GNOLSJ,GDFDKY JHVBKB,JBTOHR'}
+  layout_properties: {grid_position: 'JYRPQV,MESZAM GNOLSJ,GDFDKY JHVBKB,JBTOHR'}
   name: edit_button_relacional
   properties: {icon: 'fa:pencil-square-o', role: primary-color, text: ''}
   type: Button
 - event_bindings: {click: delete_button_relacional_click}
-  layout_properties: {grid_position: 'GNOLSJ,JYPIYH'}
+  layout_properties: {grid_position: 'JYRPQV,MESZAM GNOLSJ,JYPIYH'}
   name: delete_button_relacional
   properties: {align: right, background: red, icon: 'fa:trash', role: primary-color, text: ''}
   type: Button
 - data_bindings:
   - {code: 'self.item[''nombre_tb'']', property: text, writeback: false}
-  layout_properties: {grid_position: 'GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,WVLDPK EFCLFU,FBLCIZ IHTWJT,FXKXJO'}
+  layout_properties: {grid_position: 'JYRPQV,MESZAM GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,WVLDPK EFCLFU,FBLCIZ'}
   name: tb_nombre_rp
-  properties: {}
+  properties: {align: center}
   type: TextBox
-- data_bindings: []
-  layout_properties: {full_width_row: false, grid_position: 'GNOLSJ,GDFDKY JHVBKB,INWQTZ YDDQDB,WVLDPK EFCLFU,FBLCIZ IHTWJT,AFXFMF'}
-  name: label_2
-  properties:
-    spacing:
-      margin: [null, '0', null, '0']
-      padding: [null, '0', null, 0]
-    spacing_above: small
-    spacing_below: small
-    text: 'Apellido:'
-    visible: true
-  type: Label
 container:
   event_bindings: {refreshing_data_bindings: form_refreshing_data_bindings}
-  properties: {col_widths: '{"WVLDPK":45,"INWQTZ":55,"JBTOHR":5,"GDFDKY":55,"JYPIYH":5,"FBLCIZ":55,"BKQXEP":5,"RLCVIH":15,"VBAAAG":13,"AFXFMF":15,"CIDKKE":5,"RKEXOC":5,"FXKXJO":16,"HRRRAS":20}'}
+  properties: {col_widths: '{"WVLDPK":36,"INWQTZ":55,"JBTOHR":5,"GDFDKY":55,"JYPIYH":5,"FBLCIZ":40,"CIDKKE":14,"RKEXOC":10,"FXKXJO":16,"HRRRAS":35,"LPHDYK":57,"RWDASP":10,"MESZAM":50}'}
   type: ColumnPanel
 is_package: true
