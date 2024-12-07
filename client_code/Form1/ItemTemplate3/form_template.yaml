@@ -1,0 +1,45 @@
+components:
+- data_bindings:
+  - {code: 'self.item[''id_tb_nosql'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'UEOFFH,AAZJPH MLDWNN,QZQGJR XMIKIO,JECJXI FPRNQK,QROZJO BIPKQS,GURMGB VBALAC,XRTMIE'}
+  name: id_nosql_label
+  properties: {align: center}
+  type: Label
+- data_bindings:
+  - {code: 'self.item[''apellido_tb_nosql'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'UEOFFH,AAZJPH MLDWNN,QZQGJR XMIKIO,JECJXI FPRNQK,QROZJO BIPKQS,YAAATG'}
+  name: tb_apellido_nosql
+  properties: {align: center}
+  type: TextBox
+- data_bindings:
+  - {code: 'self.item[''materia_tb_nosql'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'UEOFFH,AAZJPH MLDWNN,QZQGJR XMIKIO,JECJXI FPRNQK,SNMZCS'}
+  name: tb_materia_nosql
+  properties: {align: center}
+  type: TextBox
+- data_bindings:
+  - {code: 'self.item[''nota_tb_nosql'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'UEOFFH,AAZJPH MLDWNN,QZQGJR XMIKIO,DPGRKA'}
+  name: tb_nota_nosql
+  properties: {align: center}
+  type: TextBox
+- event_bindings: {click: edit_nosql_click}
+  layout_properties: {grid_position: 'UEOFFH,AAZJPH MLDWNN,MQERDO'}
+  name: edit_nosql
+  properties: {background: 'theme:Primary 500', icon: 'fa:pencil-square-o', role: primary-color, text: ''}
+  type: Button
+- event_bindings: {click: delete_nosql_click}
+  layout_properties: {grid_position: 'UEOFFH,FEMJUG'}
+  name: delete_nosql
+  properties: {background: red, icon: 'fa:trash', role: primary-color, text: ''}
+  type: Button
+- data_bindings:
+  - {code: 'self.item[''nombre_tb_nosql'']', property: text, writeback: false}
+  layout_properties: {grid_position: 'UEOFFH,AAZJPH MLDWNN,QZQGJR XMIKIO,JECJXI FPRNQK,QROZJO BIPKQS,GURMGB VBALAC,YDUANN'}
+  name: tb_nombre_nosql
+  properties: {align: center}
+  type: TextBox
+container:
+  properties: {col_widths: '{"XRTMIE":110,"YDUANN":109,"JECJXI":55,"DPGRKA":5,"QROZJO":45,"SNMZCS":15,"AAZJPH":55,"FEMJUG":5,"QZQGJR":55,"MQERDO":5,"GURMGB":35,"YAAATG":25}'}
+  type: ColumnPanel
+is_package: true

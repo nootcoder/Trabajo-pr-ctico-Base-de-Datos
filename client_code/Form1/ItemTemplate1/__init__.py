@@ -27,7 +27,7 @@ class ItemTemplate1(ItemTemplate1Template):
     self.item.delete()
     self.remove_from_parent()
 
-  def edit_button_relacional_click(self, **event_args):
+  def edit_button_sql_click(self, **event_args):
     """This method is called when the button is clicked"""
     anvil.server.call('update_database', 
                       self.tb_nombre_rp.text,
